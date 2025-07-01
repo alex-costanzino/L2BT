@@ -109,10 +109,10 @@ The `A_train_VisA.py` script train the framework.
 You can specify the following options:
    - `--dataset_path`: Path to the root directory of the dataset.
    - `--checkpoint_savepath`: Path to the directory on which checkpoints will be saved, i.e., `checkpoints/checkpoints_visa`.
-   - `--class_name`: Class on which the CFMs are trained, i.e., `candle`.
-   - `--epochs_no`: Number of epochs for CFMs optimization.
+   - `--class_name`: Class on which the framework is trained, i.e., `candle`.
+   - `--epochs_no`: Number of epochs for framework optimization.
    - `--img_size`: Resolution employed during training.
-   - `--batch_size`: Number of samples per batch for CFMs optimization.
+   - `--batch_size`: Number of samples per batch for framework optimization.
    - `--label`: A label to tell apart the experiments.
 
 
