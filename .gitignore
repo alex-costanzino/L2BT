@@ -1,2 +1,7 @@
-wandb
 __pycache__
+models/__pycache__
+utils/__pycache__
+checkpoints
+wandb
+results
+assets
