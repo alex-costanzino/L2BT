@@ -75,7 +75,7 @@ To use these weights, please follow these steps:
 <div class="alert alert-info">
 
 **Warning**:
-- The code utilizes `wandb` during training to log results. Please be sure to have a wandb account. Otherwise, if you prefer to not use `wandb`, disable it in `cfm_training.py` with the `flag mode = 'disabled'`.
+- The code utilizes `wandb` during training to log results. Please be sure to have a wandb account. Otherwise, if you prefer to not use `wandb`, disable it in `A_train_VisA.py` with the `flag mode = 'disabled'`.
 
 </div>
 
