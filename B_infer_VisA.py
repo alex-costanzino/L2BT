@@ -18,7 +18,7 @@ from sklearn.metrics import roc_auc_score
 
 from utils.general_utils import set_seeds, imagenet_denormalize
 
-def infer_continuous_fcn(args):
+def infer(args):
 
     set_seeds()
 
@@ -40,8 +40,8 @@ def infer_continuous_fcn(args):
     forward_net_path = rf'{args.checkpoint_folder}/{args.class_name}/forward_net_{args.label}_{args.class_name}_{args.epochs_no}ep_{args.batch_size}bs.pth'
     backward_net_path = rf'{args.checkpoint_folder}/{args.class_name}/backward_net_{args.label}_{args.class_name}_{args.epochs_no}ep_{args.batch_size}bs.pth'
 
-    # forward_net.load_state_dict(torch.load(forward_net_path))
-    # backward_net.load_state_dict(torch.load(backward_net_path))
+    forward_net.load_state_dict(torch.load(forward_net_path))
+    backward_net.load_state_dict(torch.load(backward_net_path))
 
     # Send students to GPU.
     forward_net.to(device)
@@ -293,4 +293,4 @@ if __name__ == '__main__':
                         help = 'Label to identify the experiment.')
 
     args = parser.parse_args()
-    infer_continuous_fcn(args)
+    infer(args)
