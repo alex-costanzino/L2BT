@@ -78,7 +78,7 @@ def infer(args):
             start_event.record()
 
             # 1. Feature extraction.
-            last_patch, middle_patch = fe(rgb)
+            middle_patch, last_patch = fe(rgb)
 
             # 4. Nets prediction.
             predicted_middle_patch = backward_net(last_patch)
