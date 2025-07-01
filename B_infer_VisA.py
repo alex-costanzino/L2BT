@@ -40,8 +40,8 @@ def infer(args):
     forward_net_path = rf'{args.checkpoint_folder}/{args.class_name}/forward_net_{args.label}_{args.class_name}_{args.epochs_no}ep_{args.batch_size}bs.pth'
     backward_net_path = rf'{args.checkpoint_folder}/{args.class_name}/backward_net_{args.label}_{args.class_name}_{args.epochs_no}ep_{args.batch_size}bs.pth'
 
-    forward_net.load_state_dict(torch.load(forward_net_path))
-    backward_net.load_state_dict(torch.load(backward_net_path))
+    forward_net.load_state_dict(torch.load(forward_net_path, weights_only=False))
+    backward_net.load_state_dict(torch.load(backward_net_path, weights_only=False))
 
     # Send students to GPU.
     forward_net.to(device)
