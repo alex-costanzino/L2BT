@@ -66,7 +66,7 @@ Here, you can download the weights of the student networks employed in the resul
 To use these weights, please follow these steps:
 
 1. Create a folder named `checkpoints/checkpoints_visa` in the project directory;
-2. Download the weights [[Download]]();
+2. Download the weights [[Download]](https://drive.google.com/drive/folders/1cdcfW8cV_iURK_OwWkKjJFpzJvnJMbeb?usp=sharing);
 3. Copy the downloaded weights into the `checkpoints_visa` folder.
 
 
