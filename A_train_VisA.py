@@ -101,7 +101,7 @@ def train(args):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description = 'Train L2BT framework on a dataset.')
 
-    parser.add_argument('--dataset_path', default = '/home/alex/research/anomaly_detection/DATASETS/visa', type = str, 
+    parser.add_argument('--dataset_path', default = './DATASETS/visa', type = str, 
                         help = 'Dataset path.')
 
     parser.add_argument('--checkpoint_savepath', default = './checkpoints/checkpoints_visa', type = str, 

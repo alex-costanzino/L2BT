@@ -274,7 +274,7 @@ if __name__ == '__main__':
     parser.add_argument('--produce_qualitatives', default = True, action = 'store_true',
                         help = 'Whether to produce qualitatives or not.')
 
-    parser.add_argument('--dataset_path', default = '/home/alex/research/anomaly_detection/DATASETS/visa', type = str,
+    parser.add_argument('--dataset_path', default = './DATASETS/visa', type = str,
                         help = 'Dataset path.')
 
     parser.add_argument('--class_name', default = "candle", type = str,
